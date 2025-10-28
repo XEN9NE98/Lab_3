@@ -43,11 +43,18 @@
         .navigation a {
             text-decoration: none;
             padding-inline: 20px;
+            transition: font-weight 0.2s ease, color 0.2s ease;
         }
 
         .navigation a:hover {
-            font-weight: bolder;
+            font-weight: 600;
+            color: #71faca;
         }
+
+        .navigation a.active {
+            font-weight: bolder;
+            color: #71faca;
+        } 
 
         .header {
             display: flex;
@@ -109,7 +116,7 @@
             <a href="index.html">Home</a>
             <a href="https://xen9ne98.github.io/Lab_2/task_1.html">Biodata</a>
             <a href="hobby.html">Hobby</a>
-            <a href="campus_life.html">Campus Life</a>
+            <a href="campus_life.html" class="active">Campus Life</a>
         </div>
 
         <div class="header">

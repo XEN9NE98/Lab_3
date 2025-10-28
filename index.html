@@ -18,7 +18,7 @@
             display: flex;
             flex-direction: column;
             background-color: white;
-            width: 100%;
+            min-height: 100vh;
         }
 
         .logo {
@@ -43,11 +43,18 @@
         .navigation a {
             text-decoration: none;
             padding-inline: 20px;
+            transition: font-weight 0.2s ease, color 0.2s ease;
         }
 
         .navigation a:hover {
-            font-weight: bolder;
+            font-weight: 600;
+            color: #71faca;
         }
+
+        .navigation a.active {
+            font-weight: bolder;
+            color: #71faca;
+        } 
 
         .header {
             display: flex;
@@ -106,7 +113,7 @@
         </div>
 
         <div class="navigation">
-            <a href="index.html">Home</a>
+            <a href="index.html" class="active">Home</a>
             <a href="https://xen9ne98.github.io/Lab_2/task_1.html">Biodata</a>
             <a href="hobby.html">Hobby</a>
             <a href="campus_life.html">Campus Life</a>
