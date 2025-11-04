@@ -36,7 +36,7 @@
             background-color: #0080ee;
             min-height: 50px;
             margin-top: 10px;
-            justify-content: space-between;
+            justify-content: space-evenly;
             align-items: center;
         }
 
@@ -76,17 +76,28 @@
 
         .side_bar {
             display: flex;
+            flex-direction: column;
             background-color: #005fe2;
             flex: 0 0 30%;
             padding: 20px;
+            text-align: left;
         }
 
 
         .body_area {
             display: flex;
+            flex-direction: column;
             background-color: #005fe2;
             flex: 1;
             padding: 20px;
+            text-align: left;
+        }
+
+        .body_area img {
+            margin-bottom: 15px;
+            border-radius: 8px;
+            width: 100%;
+            max-width: 450px;
         }
 
         .footer {
@@ -125,20 +136,42 @@
 
         <div class="content">
 
-            <div class="side_bar">
-                Name: <br>
-                Muhammad Haziq Aiman bin Mohd Nazaruddin <br><br>
-                Degree: <br>
-                Bsc. Computer Science (Software Engineering) @ Universiti Tun Hussein Onn Malaysia <br><br>
-                Matric Number: <br>
-                CI230058
-            </div>
+        <div class="side_bar">
+            <h2>Campus Info</h2>
 
-            <div class="body_area">
-                I’m passionate about technology, design, and continuous learning. My interests include web development, problem-solving, and exploring how digital tools can make life better. I believe in learning by doing — building projects, collaborating with others, and growing from experience. <br><br>
-                Studying at UTHM has been a great journey of discovery. I’ve gained valuable skills through hands-on projects, teamwork, and participation in campus events. My goal is to use what I learn to create meaningful digital solutions that can help others — both on campus and beyond. <br><br>
-                This website is a little space where I share more about myself like my background, my hobbies, and my experiences as a student at UTHM. Feel free to explore the pages above to learn more about me!
-            </div>
+            <h3>Faculty:</h3>
+            <p>Faculty of Computer Science and Information Technology (FSKTM)</p>
+
+            <h3>Campus Size:</h3>
+            <p>Large campus with modern infrastructure</p>
+
+            <h3>Study Areas:</h3>
+            <p>Library & Bilik 24 Jam</p>
+
+            <h3>Favorite Spot:</h3>
+            <p>G3 and He & She Coffee</p>
+
+            <h3>Best Part:</h3>
+            <p>Collaborative learning environment and supportive community</p>
+        </div>
+
+        <div class="body_area">
+            <h3>🏫 Academic Experience</h3>
+            <img src="UTHM Campus.jpeg" alt="UTHM Campus">
+            <p>Life at UTHM has been an incredible learning journey. The Computer Science program offers a perfect blend of theoretical knowledge and practical skills. Our lecturers are supportive and encourage us to think critically and creatively. From coding labs to group projects, every day brings new challenges that help me grow as a future software engineer.</p>
+            
+            <h3>👥 Student Life & Community</h3>
+            <img src="UTHM Community.jpeg" alt="UTHM Student Life">
+            <p>The campus is buzzing with activities and opportunities to connect with fellow students. I've made great friends through study groups, class projects, and casual hangouts at the campus cafeteria. The diversity of students from different backgrounds makes campus life even more enriching and helps broaden my perspective.</p>
+            
+            <h3>🏢 Facilities & Environment</h3>
+            <img src="UTHM Facilities.jpeg" alt="UTHM Facilities">
+            <p>UTHM provides excellent facilities that support our learning. The computer labs are well-equipped with modern technology, the library offers a quiet space for studying and research, and the campus has various spots perfect for relaxing between classes. The campus environment is clean, organized, and conducive to both academic focus and personal development.</p>
+            
+            <h3>🎯 Future Goals</h3>
+            <img src="Future Goals.jpg" alt="UTHM Future">
+            <p>My time at UTHM is shaping my future in software engineering. I'm building a strong foundation in programming, learning industry-relevant skills, and preparing myself for a career in technology. I look forward to applying what I learn here to real-world projects and making a positive impact through innovative software solutions.</p>
+        </div>
 
         </div>
 

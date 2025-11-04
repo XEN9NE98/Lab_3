@@ -36,7 +36,7 @@
             background-color: #0080ee;
             min-height: 50px;
             margin-top: 10px;
-            justify-content: space-between;
+            justify-content: space-evenly;
             align-items: center;
         }
 
@@ -76,17 +76,28 @@
 
         .side_bar {
             display: flex;
+            flex-direction: column;
             background-color: #005fe2;
             flex: 0 0 30%;
             padding: 20px;
+            text-align: left;
         }
 
 
         .body_area {
             display: flex;
+            flex-direction: column;
             background-color: #005fe2;
             flex: 1;
             padding: 20px;
+            text-align: left;
+        }
+
+        .body_area img {
+            margin-bottom: 15px;
+            border-radius: 8px;
+            width: 100%;
+            max-width: 450px;
         }
 
         .footer {
@@ -126,18 +137,40 @@
         <div class="content">
 
             <div class="side_bar">
-                Name: <br>
-                Muhammad Haziq Aiman bin Mohd Nazaruddin <br><br>
-                Degree: <br>
-                Bsc. Computer Science (Software Engineering) @ Universiti Tun Hussein Onn Malaysia <br><br>
-                Matric Number: <br>
-                CI230058
+                    <h2>Quick Facts</h2>
+
+                    <h3>Favorite Programming Language:</h3>
+                    <p>JavaScript & Python</p>
+
+                    <h3>Favorite Game Genre:</h3>
+                    <p>Indie & Story Games</p>
+
+                    <h3>Favorite Sport:</h3>
+                    <p>Football & E-Sports</p>
+
+                    <h3>Current Learning:</h3>
+                    <p>Web Development & UI/UX Design</p>
+
+                    <h3>Weekend Activity:</h3>
+                    <p>Coding side projects or playing games with friends</p>
             </div>
 
             <div class="body_area">
-                I’m passionate about technology, design, and continuous learning. My interests include web development, problem-solving, and exploring how digital tools can make life better. I believe in learning by doing — building projects, collaborating with others, and growing from experience. <br><br>
-                Studying at UTHM has been a great journey of discovery. I’ve gained valuable skills through hands-on projects, teamwork, and participation in campus events. My goal is to use what I learn to create meaningful digital solutions that can help others — both on campus and beyond. <br><br>
-                This website is a little space where I share more about myself like my background, my hobbies, and my experiences as a student at UTHM. Feel free to explore the pages above to learn more about me!
+                    <h2>🎮 Gaming</h2>
+                    <img src="Gaming.jpeg" alt="Gaming">
+                    <p>I enjoy playing various video games during my free time. Gaming helps me relax and also improves my problem-solving skills and strategic thinking. Whether it's competitive multiplayer games or story-driven adventures, I appreciate the creativity and technology behind game development.</p>
+
+                    <h2>💻 Coding & Programming</h2>
+                    <img src="Coding.jpg" alt="Coding">
+                    <p>Beyond academics, I love coding personal projects and exploring new technologies. I enjoy building websites, experimenting with different programming languages, and learning about the latest trends in software development. It's both my passion and my career path.</p>
+
+                    <h2>📚 Reading & Learning</h2>
+                    <img src="Learning.jpeg" alt="Learning">
+                    <p>I'm always eager to learn new things, whether it's through online courses, tech blogs, or books about software engineering and innovation. Staying updated with industry trends and expanding my knowledge base is something I genuinely enjoy.</p>
+
+                    <h2>⚽ Sports & Fitness</h2>
+                    <img src="Sports.jpg" alt="Sports">
+                    <p>Staying active is important to me. I enjoy playing football and other sports activities with friends on campus. It's a great way to maintain physical health, build teamwork skills, and balance out the hours spent in front of a computer screen.</p>
             </div>
 
         </div>
